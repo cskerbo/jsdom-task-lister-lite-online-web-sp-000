@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const itemArray = []
   const form = document.getElementById('create-task-form');
   form.addEventListener('submit', addItem);
   let listItem = document.getElementById('tasks');
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     let inputItem = document.querySelectorAll('input#submit').value;
-
+    itemArray.shift(inputItem)
     listItem.innerHTML = `<li>${inputItem}</li>`
 
   };
