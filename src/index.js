@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let listItem = document.getElementById('tasks');
 
   function addItem(event) {
-event.preventDefault();
+    event.preventDefault();
 
-    let inputItem = form.getElementById('new-task-description').value;
+    let inputItem = document.querySelectorAll('input#new-task-description').value;
 
     listItem.innerHTML = `<li>${inputItem}</li>`
 
