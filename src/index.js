@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     let inputItem = document.querySelectorAll('input#submit').value;
-    itemArray.shift(inputItem)
+    itemArray.push(inputItem)
     listItem.innerHTML = `<li>${inputItem}</li>`
 
   };
