@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function addItem(event) {
     event.preventDefault();
 
-    let inputItem = document.querySelectorAll('input#new-task-description').value;
+    let inputItem = document.querySelectorAll('input#submit').value;
 
     listItem.innerHTML = `<li>${inputItem}</li>`
 
