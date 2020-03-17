@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementsByTagName('form');
-  form.addEventListener('submit', addItem)
+  form.addEventListener('submit', addItem);
   let listItem = document.getElementById('tasks');
 
   function addItem(event) {
