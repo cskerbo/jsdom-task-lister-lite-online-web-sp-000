@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 event.preventDefault();
 
     let inputItem = form.getElementById('new-task-description').value;
-    
+
     listItem.innerHTML = `<li>${inputItem}</li>`
 
   };
