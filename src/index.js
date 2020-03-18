@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newLi.innerText = newTask
     const deleteButton = document.createElement('button')
     deleteButton.innerText = 'Delete Me'
-    
+
     myList.appendChild(newLi)
     myList.appendChild(deleteButton)
   }
