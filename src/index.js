@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     newLi.remove()
     e.preventDefault()
     })
+
+    taskForm.reset()
+
   });
 
 });
