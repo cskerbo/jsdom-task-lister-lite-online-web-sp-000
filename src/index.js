@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const deleteButton = document.createElement('button')
     deleteButton.innerText = 'Delete Me'
 
-    myList.appendChild(newLi)
-    myList.appendChild(deleteButton)
+    userList.appendChild(newLi)
+    userList.appendChild(deleteButton)
   });
 
 });
