@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() => {
+document.addEventListener("DOMContentLoaded", function() {
 
   const taskInput = document.querySelector("#new-task-description")
   const taskForm = document.querySelector("#create-task-form")
