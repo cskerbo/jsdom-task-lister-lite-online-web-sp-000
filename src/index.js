@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     userList.appendChild(newLi)
     userList.appendChild(deleteButton)
+
+    deleteButton.addEventListener('click', function(e) {
+    newLi.remove()
+    e.preventDefault()
+    })
   });
 
 });
