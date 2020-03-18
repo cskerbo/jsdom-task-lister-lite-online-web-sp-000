@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     myList.appendChild(newLi)
     myList.appendChild(deleteButton)
-  };
+  });
 
 });
