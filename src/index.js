@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const itemArray = []
-  const form = document.getElementById('create-task-form');
-  form.addEventListener('submit', addItem);
-  let listItem = document.getElementById('tasks');
 
-  function addItem(event) {
-    event.preventDefault();
+  const taskInput = document.querySelector("#new-task-description")
+  const taskForm = document.querySelector("#create-task-form")
 
-    let inputItem = document.querySelectorAll('input#submit').value;
-    itemArray.push(`<li>${inputItem}</li>`);
-    for (i = 0; i < itemArray.length; i++) {
-      listItem.innerHTML = itemArray[i];
-    }
-
-  };
-
+  taskForm.addEventListener('submit', function(e)) {
+    e.preventDefault()
+    console.log('Submitted')
+    const newTask = taskInput.value
+    const userList = document.querySelector('#tasks')
+    const newLi = document.createElement('li')
+    newLi.innerText = newTask
+    const deleteButton = document.createElement('button')
+    deleteButton.innerText = 'Delete Me'
+    
+    myList.appendChild(newLi)
+    myList.appendChild(deleteButton)
+  }
 
 });
