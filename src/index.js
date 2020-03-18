@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     deleteButton.innerText = 'Delete Me'
 
     userList.appendChild(newLi)
-    userList.appendChild(deleteButton)
+    newLi.appendChild(deleteButton)
 
     deleteButton.addEventListener('click', function(e) {
     newLi.remove()
